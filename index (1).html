@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TecnoFix ofrece mantenimiento, diagnóstico y reparación de computadores, además de soluciones tecnológicas.">
+    <title>TecnoFix | Soluciones tecnológicas y reparaciones</title>
+</head>
+<body>
+    <header class="header-principal">
+        <a class="enlace-inicio" href="#inicio" aria-label="Ir al inicio de TecnoFix">
+            <img
+                class="logotipo-empresa"
+                src="logo-tecnofix.jpg"
+                alt="Logotipo de TecnoFix"
+                width="320"
+            >
+        </a>
+
+        <p class="nombre-empresa">TecnoFix</p>
+        <p class="eslogan-empresa">Soluciones tecnológicas y reparaciones</p>
+
+        <nav class="navegacion-principal" aria-label="Navegación principal">
+            <ul class="menu-navegacion">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-nosotros">Sobre la empresa</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="seccion-bienvenida" id="inicio" aria-labelledby="titulo-principal">
+            <h1 id="titulo-principal">Tecnología en buenas manos</h1>
+            <p>
+                En TecnoFix cuidamos tus equipos y te ayudamos a mantenerlos
+                funcionando. Ofrecemos mantenimiento, diagnóstico y reparación
+                de computadores con atención clara y soluciones adaptadas a
+                tus necesidades.
+            </p>
+            <p>
+                <a href="#servicios">Conoce nuestros servicios</a>
+                <a href="#contacto">Solicita atención</a>
+            </p>
+        </section>
+
+        <section class="seccion-servicios" id="servicios" aria-labelledby="titulo-servicios">
+            <h2 id="titulo-servicios">Nuestros servicios</h2>
+            <p>Estas son algunas de las soluciones tecnológicas que ofrecemos:</p>
+
+            <article class="tarjeta-servicio">
+                <h3>Mantenimiento preventivo</h3>
+                <p>
+                    Limpieza y revisión del computador para ayudar a conservar
+                    su funcionamiento y detectar posibles problemas.
+                </p>
+            </article>
+
+            <article class="tarjeta-servicio">
+                <h3>Formateo de computadores</h3>
+                <p>
+                    Preparación del sistema operativo e instalación desde cero,
+                    según las necesidades y autorización del cliente.
+                </p>
+            </article>
+
+            <article class="tarjeta-servicio">
+                <h3>Instalación de programas</h3>
+                <p>
+                    Instalación y configuración de programas y herramientas
+                    compatibles con el equipo.
+                </p>
+            </article>
+
+            <article class="tarjeta-servicio">
+                <h3>Reparación de hardware</h3>
+                <p>
+                    Diagnóstico de componentes físicos y reparación o
+                    reemplazo cuando sea necesario y esté autorizado.
+                </p>
+            </article>
+
+            <article class="tarjeta-servicio">
+                <h3>Eliminación de virus</h3>
+                <p>
+                    Revisión del sistema, detección de software malicioso y
+                    acciones para recuperar un funcionamiento seguro.
+                </p>
+            </article>
+        </section>
+
+        <section class="seccion-sobre-nosotros" id="sobre-nosotros" aria-labelledby="titulo-sobre-nosotros">
+            <h2 id="titulo-sobre-nosotros">Sobre TecnoFix</h2>
+
+            <article class="bloque-mision">
+                <h3>Nuestra misión</h3>
+                <p>
+                    Brindar soluciones de mantenimiento y reparación de
+                    computadores con responsabilidad, claridad y atención
+                    orientada a las necesidades de cada cliente.
+                </p>
+            </article>
+
+            <article class="bloque-vision">
+                <h3>Nuestra visión</h3>
+                <p>
+                    Ser una empresa reconocida por la confianza de sus
+                    clientes y por la calidad de sus servicios tecnológicos.
+                </p>
+            </article>
+
+            <aside class="valores-empresa" aria-labelledby="titulo-valores">
+                <h3 id="titulo-valores">Nuestros valores</h3>
+                <ul>
+                    <li>Responsabilidad</li>
+                    <li>Honestidad</li>
+                    <li>Respeto</li>
+                    <li>Compromiso con el cliente</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="seccion-contacto" id="contacto" aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">Contáctanos</h2>
+            <p>
+                Cuéntanos qué problema presenta tu equipo. Nos pondremos en
+                contacto contigo para conocer los detalles de tu solicitud.
+            </p>
+
+            <form class="formulario-contacto" action="#" method="post">
+                <p class="campo-formulario">
+                    <label for="nombre-cliente">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre-cliente"
+                        name="nombre"
+                        autocomplete="name"
+                        required
+                    >
+                </p>
+
+                <p class="campo-formulario">
+                    <label for="correo-cliente">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo-cliente"
+                        name="correo"
+                        autocomplete="email"
+                        required
+                    >
+                </p>
+
+                <p class="campo-formulario">
+                    <label for="telefono-cliente">Teléfono</label>
+                    <input
+                        type="tel"
+                        id="telefono-cliente"
+                        name="telefono"
+                        autocomplete="tel"
+                    >
+                </p>
+
+                <p class="campo-formulario">
+                    <label for="servicio-solicitado">Servicio que necesitas</label>
+                    <select id="servicio-solicitado" name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="mantenimiento-preventivo">Mantenimiento preventivo</option>
+                        <option value="formateo">Formateo de computadores</option>
+                        <option value="instalacion-programas">Instalación de programas</option>
+                        <option value="reparacion-hardware">Reparación de hardware</option>
+                        <option value="eliminacion-virus">Eliminación de virus</option>
+                        <option value="otro">Otro / No estoy seguro</option>
+                    </select>
+                </p>
+
+                <p class="campo-formulario">
+                    <label for="descripcion-problema">Describe tu solicitud</label>
+                    <textarea
+                        id="descripcion-problema"
+                        name="mensaje"
+                        rows="5"
+                        required
+                    ></textarea>
+                </p>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+
+            <section class="informacion-contacto" aria-labelledby="titulo-informacion-contacto">
+                <h3 id="titulo-informacion-contacto">Información de ubicación y contacto</h3>
+                <address>
+                    <p>Empresa: TecnoFix</p>
+                    <p>Ubicación: información de dirección pendiente de definir.</p>
+                    <p>Teléfono: información pendiente de definir.</p>
+                    <p>Correo: información pendiente de definir.</p>
+                </address>
+            </section>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 TecnoFix. Todos los derechos reservados.</p>
+
+        <nav class="navegacion-pie" aria-label="Enlaces del pie de página">
+            <ul>
+                <li><a href="#inicio">Volver al inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <p class="redes-sociales">
+            Redes sociales: agrega aquí los enlaces oficiales de TecnoFix cuando estén disponibles.
+        </p>
+    </footer>
+</body>
+</html>
